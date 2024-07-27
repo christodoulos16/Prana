@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μενού Εστιατορίου</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E0E7FF; /* Απαλό μπλε φόντο */
+        }
+        .button {
+            display: block;
+            margin: 10px;
+            padding: 15px 40px;
+            font-size: 18px;
+            color: #1E3A8A; /* Σκούρο μπλε κείμενο */
+            border: 2px solid #1E3A8A; /* Σκούρο μπλε περίγραμμα */
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            background-color: transparent;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #1E3A8A; /* Σκούρο μπλε φόντο στο hover */
+            color: #FFFFFF; /* Λευκό κείμενο στο hover */
+        }
+        .logo {
+            max-width: 110px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<img src="prana-fotos/prana.jpg" alt="Logo" class="logo">
+
+<a href="coffee.html" class="button">Coffee</a>
+<a href="koulouri.html" class="button">Koulouri</a>
+<a href="ice-beverage.html" class="button">Ice Beverage</a>
+<a href="crepe.html" class="button">Crepe</a>
+
+</body>
+</html>

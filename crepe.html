@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μενού Καφέ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0E7FF;
+            padding: 20px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+        .menu-info {
+            flex-grow: 1;
+        }
+        .menu-info h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #1E3A8A;
+        }
+        .menu-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .menu-info .price {
+            font-weight: bold;
+            color: #1E3A8A;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-item">
+    <img src="coffee1.jpg" alt="Espresso">
+    <div class="menu-info">
+        <h3>Espresso</h3>
+        <p class="price">€2.00</p>
+    </div>
+</div>
+
+<div class="menu-item">
+    <img src="coffee2.jpg" alt="Cappuccino">
+    <div class="menu-info">
+        <h3>Cappuccino</h3>
+        <p class="price">€3.00</p>
+    </div>
+</div>
+
+<div class="menu-item">
+    <img src="coffee3.jpg" alt="Latte">
+    <div class="menu-info">
+        <h3>Latte</h3>
+        <p class="price">€3.50</p>
+    </div>
+</div>
+
+<div class="menu-item">
+    <img src="coffee4.jpg" alt="Mocha">
+    <div class="menu-info">
+        <h3>Mocha</h3>
+        <p class="price">€4.00</p>
+    </div>
+</div>
+
+</body>
+</html>
