@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Μενού Καφέ</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
         body {
-            font-family: Roboto;
-            background-color: #ccffcc;
+            font-family: 'Roboto', sans-serif;
+            background-color: #E0E7FF;
             padding: 20px;
         }
         .menu-section {
@@ -19,26 +21,17 @@
             padding: 10px;
             margin: 0;
         }
-        .menu-item {
+        .menu-header, .menu-item {
             display: flex;
-            gap: 1rem;
             align-items: center;
             padding: 10px;
             border-bottom: 1px solid #ccc;
         }
-        .menu-item div {
-            width: 33%;
+        .menu-header div, .menu-item div {
+            flex: 1;
         }
-        .menu-stiles {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            font-weight: bold;
-        }
-        .menu-stiles div {
-            width: 33%;
+        .menu-item div:first-child {
+            flex: 2;
         }
         .back-button {
             background-color: #004d40;
@@ -59,16 +52,13 @@
 
 <script>
     function goBack() {
-        window.location.href = 'websitee.html'; // Change 'index.html' to your homepage URL
+        window.location.href = 'index.html'; // Change 'index.html' to your homepage URL
     }
 </script>
-    </style>
-</head>
-<body>
 
 <div class="menu-section">
     <h2>HOT COFFEES</h2>
-    <div class="menu-stiles">
+    <div class="menu-header">
         <div></div>
         <div>Regular</div>
         <div>Large</div>
@@ -157,7 +147,7 @@
 
 <div class="menu-section">
     <h2>ICED COFFEES</h2>
-    <div class="menu-item">
+    <div class="menu-header">
         <div></div>
         <div>Regular</div>
         <div>Large</div>
@@ -214,5 +204,48 @@
     </div>
 </div>
 
-</body>
-</html>
+<div class="menu-section">
+    <h2>HOT DRINKS</h2>
+    <div class="menu-header">
+        <div></div>
+        <div>Regular</div>
+        <div>Large</div>
+    </div>
+    <div class="menu-item">
+        <div>Hot Chocolate Dark</div>
+        <div>€3.00</div>
+        <div>€3.40</div>
+    </div>
+    <div class="menu-item">
+        <div>Hot Chocolate White</div>
+        <div>€3.00</div>
+        <div>€3.40</div>
+    </div>
+    <div class="menu-item">
+        <div>Chai Tea</div>
+        <div>€3.00</div>
+        <div>€3.50</div>
+    </div>
+</div>
+
+<div class="menu-section">
+    <h2>TEAS</h2>
+    <div class="menu-item">
+        <div>Hot Tea</div>
+        <div>€2.20</div>
+        <div></div>
+    </div>
+    <div class="menu-item">
+        <div>Organic Tea</div>
+        <div>€2.80</div>
+        <div></div>
+    </div>
+    <div class="menu-item">
+        <div>Mint, Chamomile, Wild Berries</div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div class="menu-section">
+   
